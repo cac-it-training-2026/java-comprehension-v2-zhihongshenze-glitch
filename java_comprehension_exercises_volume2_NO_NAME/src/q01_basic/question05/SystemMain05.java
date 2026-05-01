@@ -7,6 +7,20 @@ public class SystemMain05 {
 		AbstMember[] members = new AbstMember[2];
 		//TODO ここから実装する
 
+		members[0] = new NonMember("Sato Kensuke");
+
+		members[1] = new Member(1, "Passw0rd", "Miura Manabu", 28, 2);
+
+		System.out.println("---SHOW MEMBERS--- ");
+
+		MemberManager.showAllMembers(members);
+
+		System.out.println("---BYU ITEM---");
+
+		for (AbstMember m : members) {
+			m.buyItem();
+		}
+
 	}
 
 }

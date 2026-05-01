@@ -1,6 +1,7 @@
-package q01_basic.question04;
+package q01_basic.question06;
 
-class Member {
+public class Member {
+
 	private int id;
 	private String password;
 	private String name;
@@ -94,6 +95,10 @@ class Member {
 		this.name = name;
 		this.age = age;
 		this.rank = rank;
+	}
+
+	public void buyItem() {
+
 	}
 
 	public void showMember() {

@@ -1,6 +1,7 @@
-package q01_basic.question04;
+package q01_basic.question05;
 
-class Member {
+public class Member extends AbstMember {
+
 	private int id;
 	private String password;
 	private String name;
@@ -94,6 +95,12 @@ class Member {
 		this.name = name;
 		this.age = age;
 		this.rank = rank;
+	}
+
+	public void buyItem() {
+
+		System.out.println(getName() + " purchased the item at 50% off");
+
 	}
 
 	public void showMember() {
